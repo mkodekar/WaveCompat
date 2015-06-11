@@ -140,7 +140,7 @@ public class WaveCompat {
         marginTopAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                int value = (int) animation.getAnimatedValue();
+                int value = (Integer) animation.getAnimatedValue();
                 LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) contentView.getLayoutParams();
                 lp.topMargin = value;
                 contentView.setLayoutParams(lp);
@@ -152,7 +152,7 @@ public class WaveCompat {
         bgColorAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                int value = (int) animation.getAnimatedValue();
+                int value = (Integer) animation.getAnimatedValue();
                 contentView.setBackgroundColor(value);
             }
         });
