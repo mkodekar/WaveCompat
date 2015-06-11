@@ -80,7 +80,7 @@ public class WaveDrawable extends WaveDrawableBase {
         waveAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                currentRadius = (int) animation.getAnimatedValue();
+                currentRadius = (Integer) animation.getAnimatedValue();
                 invalidateSelf();
             }
         });
